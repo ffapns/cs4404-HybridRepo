@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <table>
+            <tr>
+                <p class="text-left">op</p>
+                <input type="text" id="digits" value="0">
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnClear" class="btnCalc">C</button>
+                </td>
+                <td>
+                    <button id="btnSign" class="btnCalc">&PlusMinus;</button>
+                </td>
+                <td>
+                    <button id="btnPercent" class="btnCalc">%</button>
+                </td>
+                <td>
+                    <button value="/" id="btnOprDivide" class="btnOpr op">&divide;</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="7" class="btnDigit" id="btn7">7</button>
+                </td>
+                <td>
+                    <button value="8" class="btnDigit" id="btn8">8</button>
+                </td>
+                <td>
+                    <button value="9" class="btnDigit" id="btn9">9</button>
+                </td>
+                <td>
+                    <button value="*" id="btnOprMultiply" class="op">&times;</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="4" class="btnDigit" id="btn4">4</button>
+                </td>
+                <td>
+                    <button value="5" class="btnDigit" id="btn5">5</button>
+                </td>
+                <td>
+                    <button value="6" class="btnDigit" id="btn6">6</button>
+                </td>
+                <td>
+                    <button value="-" id="btnOprSubtract" class="op">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="1" class="btnDigit" id="btn1 ">1</button>
+                </td>
+                <td>
+                    <button value="2" class="btnDigit" id="btn2 ">2</button>
+                </td>
+                <td>
+                    <button value="3" class="btnDigit" id="btn3 ">3</button>
+                </td>
+                <td>
+                    <button value="+" id="btnOprAdd " class="op">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2 ">
+                    <button value="0" class="btnDigit" id="btn0 ">0</button>
+                </td>
+                <td>
+                    <button id="btnDot">.</button>
+                </td>
+                <td>
+                    <button value="=" id="btnOprEqual" class="op">=</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js "></script>
+    <script src="/bower_components/modernizr/modernizr.js "></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js "></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js "></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js "></script>
+    <!-- endbuild -->
+</body>
+
+</html>
