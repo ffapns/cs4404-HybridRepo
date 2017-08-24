@@ -1,0 +1,63 @@
+<h3 class="text-center">TODO APPLICATION</h3>
+<br>
+<br>
+<div class="col-lg-12 col-xs-12">
+    <!-- Form Starts Here -->
+    <div class="form">
+        <div class="input-group">
+            <input autofocus placeholder="type your task here..." type="text" class="form-control" ng-model="taskTitle">
+            <span class="input-group-btn">
+        <button class="btn btn-warning" type="button" ng-click="addTask(taskTitle)"><span
+          class="glyphicon glyphicon-plus"></span> Add Task</button>
+            </span>
+        </div>
+        <!-- /input-group -->
+    </div>
+    <hr/>
+    <!-- Form Ends Here -->
+    <!-- Task List Ends Here -->
+</div>
+
+<!-- Task List Starts Here -->
+<div class="row">
+    <div class="col-lg-6 col-xs-6">
+        <header class="text-center">
+            <h2>TODO</h2>
+        </header>
+        <hr>
+        <ul>
+            <li class="list-group-item clearfix task" ng-repeat="task in taskList">
+                <p class="lead" ng-bind="task.title"></p>
+                <div>
+                    <span class="pull-right">
+               <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil"
+                ng-click="editTask($index)"></span></button>
+                    <button class="btn btn-primary btn-xs" ng-show="!task.done"><span class="glyphicon glyphicon-ok"
+                  ng-click="achieveTask($index)"></span></button>
+                    <button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"
+                ng-click="deleteTask($index)"></span></button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-6 col-xs-6">
+        <header class="text-center">
+            <h2>DONE</h2>
+        </header>
+        <hr>
+        <ul>
+            <li class="list-group-item clearfix task" ng-repeat="atl in achievedTaskList" ng-class="{disabled: atl.done}">
+                <p class="lead" ng-bind="atl.title"></p>
+                <div>
+                    <span class="pull-right">
+                    <button class="btn btn-primary btn-xs" ng-show="atl.done"><span class="glyphicon glyphicon-repeat"
+              ng-click="unAchieveTask($index)"></span></button>
+                    <button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"
+              ng-click="deleteAchievedTask($index)"></span></button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
